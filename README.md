@@ -22,7 +22,7 @@ Additional description about the project and its features.
 You will need an up to date browser to render this website. Also npm to run terminal commands.
 
 ### Setup and Install
-To get a local copy up and running follow these simple example steps. You can either download the zip file, or clone the repository from [here](https://github.com/herokudev/Math-Magicians/tree/set-up) 
+Get a local copy up and running using git clone https://github.com/herokudev/Math-Magicians.git, next we install dependencies with 'npm install'
 
 
 ### Usage
