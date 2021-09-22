@@ -1,39 +1,133 @@
-.App {
-  text-align: center;
+:root {
+  --display-color: #858693;
+  --operator-color: #f5913e;
+  --digit-color: #e0e0e0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  min-width: 400px;
+  width: 50vw;
+  height: 50vh;
+}
+
+.display {
+  grid-area: 1 / 1 / span 1 / span 4;
+  background-color: var(--display-color);
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 0.75em;
+}
+
+.util,
+.digit,
+.operator {
+  justify-self: center;
+  width: 100%;
+  height: 10vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.util,
+.digit {
+  background-color: var(--digit-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.operator {
+  background-color: var(--operator-color);
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+#util-0 {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#util-1 {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+#util-2 {
+  grid-area: 2 / 3 / span 1 / span 1;
+}
+
+#operator-0 {
+  grid-area: 2 / 4 / span 1 / span 1;
+}
+
+#operator-1 {
+  grid-area: 3 / 4 / span 1 / span 1;
+}
+
+#operator-2 {
+  grid-area: 4 / 4 / span 1 / span 1;
+}
+
+#operator-3 {
+  grid-area: 5 / 4 / span 1 / span 1;
+}
+
+#operator-4 {
+  grid-area: 6 / 4 / span 1 / span 1;
+}
+
+#digit-0 {
+  grid-area: 3 / 1 / span 1 / span 1;
+}
+
+#digit-1 {
+  grid-area: 3 / 2 / span 1 / span 1;
+}
+
+#digit-2 {
+  grid-area: 3 / 3 / span 1 / span 1;
+}
+
+#digit-3 {
+  grid-area: 4 / 1 / span 1 / span 1;
+}
+
+#digit-4 {
+  grid-area: 4 / 2 / span 1 / span 1;
+}
+
+#digit-5 {
+  grid-area: 4 / 3 / span 1 / span 1;
+}
+
+#digit-6 {
+  grid-area: 5 / 1 / span 1 / span 1;
+}
+
+#digit-7 {
+  grid-area: 5 / 2 / span 1 / span 1;
+}
+
+#digit-8 {
+  grid-area: 5 / 3 / span 1 / span 1;
+}
+
+#digit-9 {
+  grid-area: 6 / 1 / span 1 / span 2;
+}
+
+#digit-10 {
+  grid-area: 6 / 3 / span 1 / span 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1px;
 }
