@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import Button from './Button';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
@@ -10,51 +11,48 @@ const Calculator = () => {
   );
 
   const onClickHandler = (e) => {
+    const { total, next } = state;
+    if (!total && !next && e.target.classList.contains('operator')) return null;
     setState((state) => calculate(state, e.target.innerHTML));
+    return null;
   };
 
   const utilLabels = ['AC', '+/-', '%'];
-  const digitLabels = [7, 8, 9, 4, 5, 6, 1, 2, 3, 0, '.'];
+  const digitLabels = ['7', '8', '9', '4', '5', '6', '1', '2', '3', '0', '.'];
   const operatorLabels = ['÷', 'x', '-', '+', '='];
   const { total, next } = state;
 
   const utils = utilLabels.map(
     (utilLabel, index) => (
-      <button
-        type="button"
+      <Button
         key={`${utilLabel}`}
-        style={{ gridArea: `util-${index}` }}
-        className="util"
-        onClick={this.onClickHandler}
-      >
-        {utilLabel}
-      </button>
+        cssStyle={{ gridArea: `util-${index}` }}
+        cssClass="util"
+        action={onClickHandler}
+        label={utilLabel}
+      />
     ),
   );
   const digits = digitLabels.map(
     (digitLabel, index) => (
-      <button
-        type="button"
+      <Button
         key={`${digitLabel}`}
-        style={{ gridArea: `digit-${index}` }}
-        className="digit"
-        onClick={this.onClickHandler}
-      >
-        {digitLabel}
-      </button>
+        cssStyle={{ gridArea: `digit-${index}` }}
+        cssClass="digit"
+        action={onClickHandler}
+        label={digitLabel}
+      />
     ),
   );
   const operators = operatorLabels.map(
     (operatorLabel, index) => (
-      <button
-        type="button"
+      <Button
         key={`${operatorLabel}`}
-        style={{ gridArea: `operator-${index}` }}
-        className="operator"
-        onClick={this.onClickHandler}
-      >
-        {operatorLabel}
-      </button>
+        cssStyle={{ gridArea: `operator-${index}` }}
+        cssClass="operator"
+        action={onClickHandler}
+        label={operatorLabel}
+      />
     ),
   );
   return (
