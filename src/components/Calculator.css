@@ -1,0 +1,50 @@
+.display {
+  background-color: var(--display-color);
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 0.75em;
+}
+
+.util,
+.digit,
+.operator {
+  justify-self: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.util,
+.digit {
+  background-color: var(--digit-color);
+}
+
+.util:hover,
+.digit:hover {
+  background-color: var(--digit-color-hover);
+}
+
+.operator {
+  background-color: var(--operator-color);
+}
+
+.operator:hover {
+  background-color: var(--operator-color-hover);
+}
+
+.grid {
+  display: grid;
+  grid:
+    "display display display display" 10vh
+    "util-0 util-1 util-2 operator-0" 10vh
+    "digit-0 digit-1 digit-2 operator-1" 10vh
+    "digit-3 digit-4 digit-5 operator-2" 10vh
+    "digit-6 digit-7 digit-8 operator-3" 10vh
+    "digit-9 digit-9 digit-10 operator-4" 10vh
+    / 1fr 1fr 1fr 1fr;
+}
