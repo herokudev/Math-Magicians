@@ -33,7 +33,7 @@ To test the app locally, download source code, install dependencies and excute '
 Herbert Orellana
 
 - GitHub: [@herokudev](https://github.com/herokudev)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/armando-orellana-a0b50b34)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/herbert-armando-orellana-a0b50b34/)
 
 
 ## 🤝 Contributing
