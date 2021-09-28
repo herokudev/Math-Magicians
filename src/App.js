@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
-import Home from './pages/Home';
-import Quote from './pages/Quote';
+import Home from './components/Home';
+import Quote from './components/Quote';
 import './App.css';
 
 const App = () => (
