@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-title {
+  font-family: 'Caveat', cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+.nav-menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu-list li {
+  padding: 1em;
+}
+
+.nav-menu-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu-list a:hover {
+  text-decoration: underline;
+}
+
+.active-link {
+  font-weight: bold;
+}
