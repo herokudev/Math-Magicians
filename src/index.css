@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  background-color: #d7be82;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -28,6 +29,7 @@ body {
   font-family: 'Caveat', cursive;
   font-size: 3em;
   text-align: center;
+  color: #7a4419;
 }
 
 .nav-menu-list {
@@ -41,7 +43,8 @@ body {
 
 .nav-menu-list a {
   text-decoration: none;
-  color: black;
+  font-size: 2em;
+  color: #755c1b;
 }
 
 .nav-menu-list a:hover {
