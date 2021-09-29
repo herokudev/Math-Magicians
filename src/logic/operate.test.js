@@ -2,7 +2,7 @@ import operate from './operate';
 
 describe('"operate" function', () => {
   describe('for addition cases:', () => {
-    it('adds two positive given integers: 123 + 456 = 579', () => {
+    test('adds two positive given integers: 123 + 456 = 579', () => {
       expect(operate('123', '456', '+')).toBe('579');
     });
     it('adds one positive and one negative integers: 456 - 123 = 333', () => {
