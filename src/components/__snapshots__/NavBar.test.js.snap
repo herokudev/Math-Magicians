@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar component NavBar snapshot test 1`] = `
+<DocumentFragment>
+  <nav
+    class="nav-menu"
+  >
+    <h1
+      class="nav-title"
+    >
+      Math Magicians
+    </h1>
+    <ul
+      class="nav-menu-list"
+    >
+      <li>
+        <a
+          aria-current="page"
+          class="active-link"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/calculator/"
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          href="/quote/"
+        >
+          Quote
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
