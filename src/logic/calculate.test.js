@@ -1,5 +1,5 @@
-import { Console } from 'console';
 import calculate from './calculate';
+
 describe('calculate" function', () => {
   const defaultCalc = {
     total: null,

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Use Jest snapshots to test the Button component renders a button with the correct label 1`] = `
+<DocumentFragment>
+  <button
+    class="default-class"
+    style="grid-area: grid-1;"
+    type="button"
+  >
+    Button Label
+  </button>
+</DocumentFragment>
+`;
