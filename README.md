@@ -29,12 +29,28 @@ Get a local copy up and running using git clone https://github.com/herokudev/Mat
 To test the app locally, download source code, install dependencies and excute 'npm start' command.
 
 
-## Authors (Github: Herokudev)
-Herbert Orellana
-
+### Testing
+​
+To run all test type on the terminal:
+```
+npm run test
+```
+​
+This will automatically run all the test files inside the project
+​
+## Authors
+​
+👨‍💻 **Herbert Orellana**
+​
 - GitHub: [@herokudev](https://github.com/herokudev)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/herbert-armando-orellana-a0b50b34/)
-
+​
+👨‍💻 **Jose Alberto Arriaga Ramos**
+​
+- GitHub: [@jaarkira](https://github.com/jaarkira )
+- Twitter: [@91_jaar](https://twitter.com/91_jaar )
+- LinkedIn: [Jose Arriaga](https://www.linkedin.com/in/jaar/)
+​
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
