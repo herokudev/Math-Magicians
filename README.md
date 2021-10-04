@@ -8,9 +8,10 @@
 
 Additional description about the project and its features.
 
-## Live Demo
+## Live Demo links
 
-[Live Demo Link](https://demo-app2347.herokuapp.com/)
+[Heroku Live Demo ](https://demo-app2347.herokuapp.com/)
+[Netlify Live Demo ](https://herbert-math-magicians.netlify.app/)
 
 
 ## Built With
